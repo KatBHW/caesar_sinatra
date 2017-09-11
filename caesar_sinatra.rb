@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'sinatra/reloader' if development?
 
-get '/caesar_sinatra' do
+get '/' do
   input = " "
   input = params['phrase'] if params['phrase']
   characters = input.scan(/./) 
